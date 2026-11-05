@@ -3,3 +3,4 @@
 | Nafn | HÍ netfang | Github netfang |
 |-|-|-|
 |Þorvaldur Hrafn Joensen | thj162@hi.is | thorvaldurhrafn |
+| Marijonas Valdas Vark | MVV5@hi.is | MJ-VV06  |
