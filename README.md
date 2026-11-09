@@ -4,3 +4,4 @@
 |-|-|-|
 |Þorvaldur Hrafn Joensen | thj162@hi.is | thorvaldurhrafn |
 | Marijonas Valdas Vark | MVV5@hi.is | MJ-VV06  |
+| Ella Margret Borgfjörð Roth | emb41@hi.is| ellamargret101  |
