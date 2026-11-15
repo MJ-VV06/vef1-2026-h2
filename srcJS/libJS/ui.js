@@ -38,3 +38,8 @@ export function setupSearch(input, container, books) {
         renderBookList(container, searchBooks(books, input.value)) //render the booksss
     });
 }
+
+/** NEXT THING, render bok eftir id i searchbarinu
+ */
+export function renderBookID() {
+}
