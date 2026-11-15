@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "title": "Hobbitinn",
+    "author": "J.R.R. Tolkien",
+    "description": "Bilbo Baggins fer í óvænt ferðalag með dvergum og galdramanni.",
+    "cover": "",
+    "reviews": [
+      { "rating": 5, "description": "Frábær bók, las hana tvisvar." }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Njáls saga",
+    "author": "Óþekktur",
+    "description": "Fræg Íslendingasaga um vináttu, hefnd og blóðuga deilu.",
+    "cover": "",
+    "reviews": [
+      { "rating": 3, "description": "Löng en góð." },
+      { "rating": 4, "description": "Betri í annað sinn." }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "description": "",
+    "cover": "",
+    "reviews": []
+  },
+  {
+    "id": 4,
+    "title": "Harry Potter og viskusteinninn",
+    "author": "J.K. Rowling",
+    "description": "Drengur kemst að því að hann er galdramaður.",
+    "cover": "",
+    "reviews": [
+      { "rating": 4, "description": "Skemmtileg." },
+      { "rating": 4, "description": "" },
+      { "rating": 5, "description": "Klassík." }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Þriðja táknið",
+    "author": "Yrsa Sigurðardóttir",
+    "description": "Íslensk glæpasaga.",
+    "cover": "",
+    "reviews": [
+      { "rating": 2, "description": "Ekki minn tebolli." }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Öræfi",
+    "author": "Ófeigur Sigurðsson",
+    "description": "",
+    "cover": "",
+    "reviews": []
+  }
+]
