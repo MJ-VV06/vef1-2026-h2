@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html lang="is">
-    <head></head>
+    <head>
+        <title>Bók!</title>
+        <link rel="icon" href="../images/icon.svg">
+    <meta charset="utf-8" />
+
+    </head>
 <body>
 
     <h1 class="book-title">Bók</h1>
     <p class="book-author">Höfundur</p>
     <p class="book-date">19xx - 2025</p>
     <div class="book-review"><img src="images/star-full.svg" alt="star" height="16px">
-                    <img src="../images/star-full.svg" alt="star" height="16px">
-                    <img src="../images/star-full.svg" alt="star" height="16px">
-                    <img src="../images/star-half.svg" alt="star" height="16px">
-                    <img src="../images/star-empty.svg" alt="star" height="16px">
-                    <img src="../images/star-empty.svg" alt="star" height="16px"></div>
+                    <img src="../images/star-open-full.svg" alt="star" height="16px"><img src="../images/star-close-full.svg" alt="star" height="16px">
+                    <img src="../images/star-open-full.svg" alt="star" height="16px"><img src="../images/star-close-full.svg" alt="star" height="16px">
+                    <img src="../images/star-open-full.svg" alt="star" height="16px"><img src="../images/star-close-full.svg" alt="star" height="16px">
+                    <img src="../images/star-open-full.svg" alt="star" height="16px"><img src="../images/star-close-empty.svg" alt="star" height="16px">
+                    <img src="../images/star-open-empty.svg" alt="star" height="16px"><img src="../images/star-close-empty.svg" alt="star" height="16px">
+
+                    
+                </div>
+
+    <button class="open-review">Gefðu umsögn</button> <!-- Þessi takki skal opna dropdown að review forminu. -->
+    <form class="dropdown-form">
+        <label for="review-text">Skrifaðu umsögn (valfrjálst)</label><br>
+        <input type="text" id="review-text"><br>
+        <div>
+            <!-- Hérna eru allar 5 stjörnur, við viljum fylla hlutann sem þú ýtir á og líka stjörnurnar á undan því.-->
+            <img src="../images/star-open-empty.svg" alt="star" height="24px"><img src="../images/star-close-empty.svg" alt="star" height="24px">
+            <img src="../images/star-open-empty.svg" alt="star" height="24px"><img src="../images/star-close-empty.svg" alt="star" height="24px">
+            <img src="../images/star-open-empty.svg" alt="star" height="24px"><img src="../images/star-close-empty.svg" alt="star" height="24px">
+            <img src="../images/star-open-empty.svg" alt="star" height="24px"><img src="../images/star-close-empty.svg" alt="star" height="24px">
+            <img src="../images/star-open-empty.svg" alt="star" height="24px"><img src="../images/star-close-empty.svg" alt="star" height="24px">
+
+        </div>
+        <button class="review-submit">Skila umsögn</button>
+
+    </form>
 </body>
     </html>
