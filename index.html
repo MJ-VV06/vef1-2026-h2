@@ -3,6 +3,7 @@
     <head>
         <title>Bækur!</title>
         <link rel="icon" href="images/icon.svg">
+            <meta charset="utf-8" />
     </head>
     <body>
         <h1>Bókaskráning!</h1>
@@ -11,16 +12,18 @@
                 <li> <!-- Hver skráð bók verður inni í <li> kubb-->
 
                     
-                    <a href="src/book.html">Bókanafn</a> <!-- Href vísir á bókasíðuna -->
+                    <a href="src/book.html?id=<id>">Bókanafn</a> <!-- Href vísir á bókasíðuna með rétta ID. ID-ið verðu ákvarðað í js.-->
                     
                 </li>
         </ul>
 
 
         <div class="book-searcher"></div> <!-- Þetta er  kubburinn sem inniheldur search bar-ið -->
-        <label for="book-search-input">Settu inn bók!</label><br>
+        <form>
+        <label for="book-search-input">Leitaðu af bók!</label><br>
         <input name="book-search-input" id="book-search-input">
         <button class="search-button">Leitaðu</button>
+        </form>
 
     </body>
 </html>
