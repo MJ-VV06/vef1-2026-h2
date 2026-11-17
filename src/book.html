@@ -7,11 +7,13 @@
 
     </head>
 <body>
-
+    <img class="book-cover" alt="book-cover">
     <h1 class="book-title">Bók</h1>
     <p class="book-author">Höfundur</p>
     <p class="book-date">19xx - 2025</p>
-    <div class="book-review"><img src="images/star-full.svg" alt="star" height="16px">
+    <p class="book-description">Lýsing</p>
+    <div class="book-review-average">
+                    <img src="images/star-full.svg" alt="star" height="16px">
                     <img src="../images/star-open-full.svg" alt="star" height="16px"><img src="../images/star-close-full.svg" alt="star" height="16px">
                     <img src="../images/star-open-full.svg" alt="star" height="16px"><img src="../images/star-close-full.svg" alt="star" height="16px">
                     <img src="../images/star-open-full.svg" alt="star" height="16px"><img src="../images/star-close-full.svg" alt="star" height="16px">
@@ -25,6 +27,10 @@
     <form class="dropdown-form">
         <label for="review-text">Skrifaðu umsögn (valfrjálst)</label><br>
         <input type="text" id="review-text"><br>
+        <label for="review-start">Hvenær byrjaðiru lesturinn?</label><br>
+        <input type="date" id="review-text"><br>
+        <label for="review-end">Hvenær ljóskt þú lesturinn?</label><br>
+        <input type="date" id="review-text"><br>
         <div>
             <!-- Hérna eru allar 5 stjörnur, við viljum fylla hlutann sem þú ýtir á og líka stjörnurnar á undan því.-->
             <img src="../images/star-open-empty.svg" alt="star" height="24px"><img src="../images/star-close-empty.svg" alt="star" height="24px">
@@ -37,5 +43,26 @@
         <button class="review-submit">Skila umsögn</button>
 
     </form>
+    <ul class="review-list">
+        <!-- Hérna er dæmi af umsögn í HTML format. Þetta ætti að vera byggt sjálfvirkt í js. -->
+        <!-- <li>
+
+
+            <div class="stars-container">
+                <img src="../images/star-open-empty.svg" alt="star" height="24px"><img src="../images/star-close-empty.svg" alt="star" height="24px">
+            <img src="../images/star-open-empty.svg" alt="star" height="24px"><img src="../images/star-close-empty.svg" alt="star" height="24px">
+            <img src="../images/star-open-empty.svg" alt="star" height="24px"><img src="../images/star-close-empty.svg" alt="star" height="24px">
+            <img src="../images/star-open-empty.svg" alt="star" height="24px"><img src="../images/star-close-empty.svg" alt="star" height="24px">
+            <img src="../images/star-open-empty.svg" alt="star" height="24px"><img src="../images/star-close-empty.svg" alt="star" height="24px">
+            </div>
+            <p class="review-description">dsaf</p>
+        </li>
+        -->
+
+
+
+    </ul>
+    
+
 </body>
     </html>
