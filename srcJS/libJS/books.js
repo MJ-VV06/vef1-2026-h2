@@ -19,7 +19,7 @@ export function getBookById(books, id) {
 
 /** bæta við bók í JSON
  * @param {Book[]} books
- * @param {{title: string, author: string, description?: string, cover?: string}} data
+ * @param {{title: string, author: string, description?: string, cover?: string, releaseDate: string}} data
  */
 export function addBook(books, data) {
 
@@ -30,21 +30,28 @@ export function addBook(books, data) {
     // ef til, þarf samt ekki
     const description = data.description?.trim() ?? "";
     const cover = data.cover?.trim() ?? "";
+    const releaseDate = data.releaseDate?.trim() ?? "";
 
     if (!title || !author) {
         throw new Error("vantar author og titill");
     }
 
-    // öruglega versta leiðin til að gera þetta (gæti verið villa ef 999999999 bækur en skiptiri ekki það mikið mál
-    const id = books.length + 1;
+    // updated, fer í gegnum ids í books, stærsta id plús 1
+    let maxId = 0;
+    for (const book of books) {
+        if (maxId <= book.id) {
+            maxId = book.id;
+        }
+    }
 
     //bættir við í book object og svo bætt við í Books dataið
     const book = {
-        id: id, 
+        id: maxId + 1, 
         title: title,
         author: author,
         description: description,
         cover: cover,
+        releaseDate: releaseDate,
         reviews: []
   };
 
