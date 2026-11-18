@@ -2,8 +2,8 @@
  * @typedef Book
  * @property {number} id (gerir automatically)
  * @property {string} title 
- * @property {string} author
- * @property {string} description (líka optional en function dealar með þetta)
+ * @property {string} [author]
+ * @property {string} [description] (líka optional en function dealar með þetta)
  * @property {string} [cover]  mynd af bokina (optional)
  * @property {string} releaseDate 
  * @property {Review[]} reviews  
