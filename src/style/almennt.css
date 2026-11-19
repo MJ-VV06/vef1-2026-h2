@@ -14,7 +14,8 @@ header{
 #book-search-input {
     width: 100%;
     padding: 6px;
-
+    border-radius: 5px;
+    border: 1px solid;
 }
 
 body {
@@ -24,6 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    
 }
 
 footer {
