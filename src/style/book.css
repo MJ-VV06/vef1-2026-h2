@@ -34,3 +34,16 @@
 .open-review {
   margin-bottom: 32px;
 }
+
+.stars-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.stars-container img{
+  width: 5%;
+}
+

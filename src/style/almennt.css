@@ -72,11 +72,40 @@ footer {
 
 .targethref a {
   text-decoration: none;
-  color: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(34, 189, 57, 1) 100%);
+  color: #000000
 }
 
 .boklist {
   text-align: center;
 }
+
+.nybok {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.submissiontakki {
+  text-decoration: none;
+  color:#000000;
+  padding: 6px 16px;
+  margin-bottom: 8px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: #c4ecf7;
+  width: fit-content;
+  align-self: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color:#000000;
+}
+
 
 
