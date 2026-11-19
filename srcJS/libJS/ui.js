@@ -133,7 +133,7 @@ function renderStars(rating) {
         const fill = i <= rating ? "full" : "empty";
 
         // gera img og appenda
-        container.appendChild(el("img", {src: `/images/star-${side}-${fill}.svg`,alt: "star",height:"16px"}));
+        container.appendChild(el("img", {src: `/images/star-${side}-${fill}.svg`}));
     }
     // skilur til baka container
     return container;

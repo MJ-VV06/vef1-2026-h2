@@ -1,7 +1,8 @@
 import { loadBooks, saveBooks  } from "./libJS/storage.js";
 import { addBook, getBookById, addReview, findBookId } from "./libJS/books.js";
 import { renderBookList, setupSearch, renderBook, renderReviews } from "./libJS/ui.js";
-import {el, empty} from "./libJS/elements.js"
+import {el, empty} from "./libJS/elements.js";
+import {SetStars} from "./libJS/stars.js"
 const data = await loadBooks();
 const input = document.querySelector("#book-search-input"); // allar síður hafa
 const searchForm = document.querySelector(".book-searcher form");
@@ -71,16 +72,15 @@ if (bookInputHTML) {
         // reyna
         try {
             //bæta við bókina
-            addBook(data, formDataObject);
+            const book = addBook(data, formDataObject);
 
             //save í json
             saveBooks(data);
 
-            // hreinsa form
-            bookInputHTML.reset();
+            window.location.href = `/src/book.html?id=${book.id}`;
 
         } catch (error) {
-            console.error(error);
+            console.error(error.message);
         }
     })
 }
@@ -91,7 +91,7 @@ if (reviewInputHTML) {
 
     //no refresh submit
     reviewInputHTML.addEventListener('submit', (event) => {
-        event.preventDefault();
+         event.preventDefault();
 
         //sækja í form data og breytta í object
         const formData = new FormData(reviewInputHTML);
@@ -117,6 +117,7 @@ if (reviewInputHTML) {
             //save í json
             saveBooks(data);
 
+            renderBook(bookHTML, book); 
 
             // sýna review á síðuna
             const reviewList = document.querySelector(".review-list");
@@ -126,9 +127,16 @@ if (reviewInputHTML) {
             }
 
             reviewInputHTML.reset(); // hreinsa review form
+            SetStars(document.querySelector(".hlidvidhlid div"), 0); // hreinsa stars
+            
+            //hreinsa rating þannig það er ekki hægt að submita 0 star review með same value og seinnasta review
+            const ratingInput = document.getElementById("review-stars");
+            if (ratingInput) {
+                ratingInput.value = "";
+            }
 
         } catch (error) {
-            console.error(error);
+            console.error(error.message);
         }
     });
 }

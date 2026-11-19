@@ -14,7 +14,7 @@ export function createStars(starContainer, ratingHolder) {
 
     for (let i = 0; i < starContainer.children.length; i++) {
         starContainer.children[i].addEventListener("click",(e) => {
-            console.log(e.target.id);
+            // console.log(e.target.id);
             SetStars(starContainer, e.target.id);
             ratingHolder.value = e.target.id;
         })
@@ -33,11 +33,11 @@ export function createStars(starContainer, ratingHolder) {
 export function SetStars(starContainer, ratingNumber) {
     for (let i = 0; i < starContainer.children.length; i++) {
         if (i < +ratingNumber){
-            console.log(+starContainer.children[i].id,"is a lesser number than ", +ratingNumber, "!");
+            // console.log(+starContainer.children[i].id,"is a lesser number than ", +ratingNumber, "!");
             starContainer.children[i].src = ("../images/star-"+(i%2==0 ? "open" : "close")+"-full.svg");
         }
         else {
-            console.log(+starContainer.children[i].id,"is not a lesser number than ", +ratingNumber, "!");
+            // console.log(+starContainer.children[i].id,"is not a lesser number than ", +ratingNumber, "!");
             starContainer.children[i].src = ("../images/star-"+(i%2==0 ? "open" : "close")+"-empty.svg");
         }
     }

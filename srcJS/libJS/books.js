@@ -20,6 +20,7 @@ export function getBookById(books, id) {
 /** bæta við bók í JSON
  * @param {Book[]} books
  * @param {{title: string, author: string, description?: string, cover?: string, releaseDate: string}} data
+ * @returns {Book}
  */
 export function addBook(books, data) {
 
@@ -33,7 +34,7 @@ export function addBook(books, data) {
     const releaseDate = data.releaseDate?.trim() ?? "";
 
     if (!title) {
-        throw new Error("vantar titill");
+        throw new Error("Titill vantar");
     }
 
     // updated, fer í gegnum ids í books, stærsta id plús 1
@@ -56,7 +57,7 @@ export function addBook(books, data) {
   };
 
   books.push(book);
-
+  return book;
 }
 
 
@@ -92,7 +93,7 @@ export function addReview(book, rating, description, startedDate, finishedDate) 
     const value = Number(rating);
 
     if (!Number.isInteger(value) || value < 1 || value > 10) { // eitthvað fer vitlaust somehow (ætti ekki að gerast)
-        throw new Error("Value er med error"); // test message
+        throw new Error("Veldu einkunn"); // test message
     }
 
 
@@ -103,7 +104,7 @@ export function addReview(book, rating, description, startedDate, finishedDate) 
 
     // start og enddate errors
     if (startDate && endDate && endDate < startDate) {
-        throw new Error("Klára bókina áður en þú lesir það, how????");
+        throw new Error("Lokadagur má ekki vera á undan byrjun dags");
     }
 
 
