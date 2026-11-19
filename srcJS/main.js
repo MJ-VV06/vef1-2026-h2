@@ -54,3 +54,31 @@ if (bookHTML) {
         bookHTML.appendChild(el("h1", {}, "Bók fannst ekki"));
     }
 }
+
+
+
+const bookInputHTML = document.querySelector(".book-form");
+
+if (bookInputHTML) {
+    console.log("hi");
+    bookInputHTML.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(bookInputHTML);
+        const data = Object.fromEntries(formData.entries());
+        console.log(data);
+    })
+}
+/** 
+const reviewInputHTML = document.querySelector(".dropdown-form");
+if (reviewInputHTML) {
+    reviewInputHTML.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(reviewInputHTML);
+        const data = Object.fromEntries(formData.entries());
+
+        console.log('Form Data:', data);
+    })
+}
+    */
