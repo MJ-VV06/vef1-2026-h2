@@ -7,68 +7,67 @@
             <script type="module" src="/srcJS/main.js"></script>
             <link rel="stylesheet" href="src/styles.css" />
     </head>
+
     <body>
+
         <header>
+            <h2>Bækur!</h2>
             <div class="book-searcher">
             
-            <form>
-                <label for="book-search-input">Leitaðu af bók!</label><br>
-                <input name="book-search-input" id="book-search-input">
-                <button class="search-button">Leitaðu</button>
-            </form>
-        </div> <!-- Þetta er  kubburinn sem inniheldur search bar-ið -->
-            <h1>Bækur!</h1>
-        </header>
-            <h1>Bókalisti</h1>
-        <div class="book-list-div">
-            
-            <ul class="book-list"> <!-- Þetta er með listann af skráðum bókum -->
+                <form>
+                    <label for="book-search-input">Leitaðu af bók!</label><br>
+                    <input name="book-search-input" id="book-search-input">
+                </form>
+                <ul class="search-results">
 
-                <!-- Hérna er dæmi að bók í HTML form. Þetta ætti að vera byggt sjálfvirkt í js. -->
-
-                <!--
-                    <li class="targethref">
-                        <a href="src/book.html?id=<id>"> 
-                            <img src="" alt="book-cover-alt-text">  
-                            <h1>Bókatitill</h1>
-                        </a>
-                    </li>
-                -->
-
-
-                <li> <!-- Hver skráð bók verður inni í <li> kubb-->
-                    
-                    
-                    <a href="src/book.html?id=<id>">Bókanafn</a> <!-- Href vísir á bókasíðuna með rétta ID. ID-ið verðu ákvarðað í js.-->
-                        
-                    </li>
                 </ul>
-            </div>
-                
-
-        <div class="book-searcher">
+            </div> <!-- Þetta er  kubburinn sem inniheldur search bar-ið -->
             
-            <form>
-                <label for="book-search-input">Leitaðu af bók!</label><br>
-                <input name="book-search-input" id="book-search-input">
-                <button class="search-button">Leitaðu</button>
-            </form>
-        </div> <!-- Þetta er  kubburinn sem inniheldur search bar-ið -->
+        </header>
+
+        <main>
+                <h1>Bókalisti</h1>
+                <div class="book-list-div">
+                
+                    <ul class="book-list"> <!-- Þetta er með listann af skráðum bókum -->
+
+                        <!-- Hérna er dæmi að bók í HTML form. Þetta ætti að vera byggt sjálfvirkt í js. -->
+
+                        <!--
+                            <li class="targethref">
+                                <a href="src/book.html?id=<id>"> 
+                                    <img src="" alt="book-cover-alt-text">  
+                                    <h1>Bókatitill</h1>
+                                </a>
+                            </li>
+                        -->
+
+
+                        <li> <!-- Hver skráð bók verður inni í <li> kubb-->
+                        
+                        
+                            <a href="src/book.html?id=<id>">Bókanafn</a> <!-- Href vísir á bókasíðuna með rétta ID. ID-ið verðu ákvarðað í js.-->
+                            
+                        </li>
+                    </ul>
+                </div>
+        </main>
+
+        <footer>
+            <div class = "heimilisfang">
+                <p>Antartica</p>
+                <p>Davis Station</p>
+
+            </div>
+
+            <div class = "simanr">
+                <p>Sími +354 123-4567</p>
+                <p>Hafa samband: <a href="mailto:bok@bokin.is">bok@bokin.is</a> </p>
+
+            </div>
+
+        </footer>
 
     </body>
 
-    <footer>
-        <div class = "heimilisfang">
-            <p>Antartica</p>
-            <p>Davis Station</p>
-
-        </div>
-
-        <div class = "simanr">
-            <p>Sími +354 123-4567</p>
-            <p>Hafa samband: <a href="mailto:bok@bokin.is">bok@bokin.is</a> </p>
-
-        </div>
-
-    </footer>
 </html>

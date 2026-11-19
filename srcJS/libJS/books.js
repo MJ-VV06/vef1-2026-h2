@@ -25,15 +25,15 @@ export function addBook(books, data) {
 
     //kíkir ef til annars villa
     const title = data.title?.trim();
-    const author = data.author?.trim();
 
     // ef til, þarf samt ekki
+    const author = data.author?.trim() ?? "";
     const description = data.description?.trim() ?? "";
     const cover = data.cover?.trim() ?? "";
     const releaseDate = data.releaseDate?.trim() ?? "";
 
-    if (!title || !author) {
-        throw new Error("vantar author og titill");
+    if (!title) {
+        throw new Error("vantar titill");
     }
 
     // updated, fer í gegnum ids í books, stærsta id plús 1
@@ -146,5 +146,22 @@ export function searchBooks(books, search) {
         return [];
     }
     return bookArray;
+}
 
+/** til að finna id
+ * @returns {number | null}
+ */
+export function findBookId() {
+    // kíkir fyrir id annars senda null
+    const rawId = new URLSearchParams(window.location.search).get("id");
+    if (rawId === null || rawId === "") {
+        return null;
+    }
+
+    // breyttir id í number, ef það er ekki number þá null
+    const id = Number(rawId);
+    if (!Number.isInteger(id)) {
+        return null;
+    }
+    return id;
 }
