@@ -1,0 +1,24 @@
+.submain {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+}
+
+.submain form {
+  width: 100%;
+}
+
+.submain form input {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 8px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+#submission {
+  background-color: #c4ecf7;
+}

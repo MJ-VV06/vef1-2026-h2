@@ -1,0 +1,8 @@
+/** css á aðal síðunni */
+@import url("./style/book.css");
+
+/** css á síðunni að skrá nýja bók */
+@import url("./style/submission.css");
+
+/** css yfir almennt útlit, header, footer og bakgrunnur */
+@import url("./style/almennt.css");

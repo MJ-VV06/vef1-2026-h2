@@ -20,7 +20,7 @@
     "preview": "vite preview",
     "lintJS": "eslint srcJS",
     "lint": "prettier '**/*.{css,html}' --write",
-    "lint:fix": "stylelint '**/*.{css,scss}' --fix"
+    "lint:fix": "stylelint \"**/*.{css,scss}\" --fix"
   },
   "dependencies": {
     "eslint": "^10.15.0",
@@ -30,6 +30,8 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "globals": "^17.14.0"
+    "globals": "^17.14.0",
+    "stylelint-config-recess-order": "^7.10.1",
+    "stylelint-config-standard": "^41.0.0"
   }
 }

@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  padding: 8px 16px;
+  text-align: center;
+  background-color: #c4ecf7;
+}
+
+#book-search-input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(196 236 247 / 64.4%);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: auto;
+  background-color: #c4ecf7;
+}
+
+.simanr {
+  text-align: right;
+}
