@@ -1,6 +1,6 @@
 // js hlutir sem notandi getur séð
-import { el, empty, setText } from "./elements.js";
-import { searchBooks, findBookId, averageRating} from "./books.js";
+import { el, empty } from "./elements.js";
+import { searchBooks, averageRating} from "./books.js";
 /** @typedef {import('./main.types.js').Book} Book */
 
 /** sýna bækur
@@ -133,7 +133,7 @@ function renderStars(rating) {
         const fill = i <= rating ? "full" : "empty";
 
         // gera img og appenda
-        container.appendChild(el("img", {src: `/images/star-${side}-${fill}.svg`,alt: "",}));
+        container.appendChild(el("img", {src: `/images/star-${side}-${fill}.svg`,alt: "star",height:"16px"}));
     }
     // skilur til baka container
     return container;
