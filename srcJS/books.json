@@ -4,8 +4,9 @@
         "id": 0,
         "title": "Fly fly bloon!",
         "author": "Dart monkey",
+        "releaseDate":"22/03/2023",
         "description": "A collection of poems written by the dart monkey from BTD6.",
-        "cover": "",
+        "cover": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/International_hot_air_balloon_festival_in_leon_guanajuato_mexico_2012.jpg/960px-International_hot_air_balloon_festival_in_leon_guanajuato_mexico_2012.jpg",
         "reviews": []
          
     },
@@ -13,8 +14,9 @@
         "id": 2,
         "title": "The small rodent",
         "author": "Average zoologist",
+        "releaseDate":"12/05/1987",
         "description": "A biography of the pet of my local zoologist.",
-        "cover": "",
+        "cover": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Eastern_quoll_%28Dasyurus_viverrinus%29_fawn_morph_Esk_Valley.jpg/1280px-Eastern_quoll_%28Dasyurus_viverrinus%29_fawn_morph_Esk_Valley.jpg",
         "reviews": [
             {
                 "rating": 1,
@@ -29,9 +31,190 @@
         "id": 3,
         "title": "Twilight",
         "author": "Stephenie Meyer",
+        "releaseDate":"05/10/2005",
         "description": "About three things I was absolutely positive. First, Edward was a vampire. Second, there was a part of him - and I didn't know how dominant that part might be - that thirsted for my blood. And third, I was unconditionally and irrevocably in love with him. Deeply seductive and extraordinarily suspenseful, Twilight is a love story with bite.",
-        "cover": "",
+        "cover": "https://upload.wikimedia.org/wikipedia/en/1/1d/Twilightbook.jpg?_=20200912152913",
+        "reviews": []
+         
+    },
+    {
+        "id": 4,
+        "title": "Twilight: New Moon",
+        "author": "Stephenie Meyer",
+        "releaseDate":"21/08/2006",
+        "description": "Before you, Bella, my life was like a moonless night. Very dark, but there were stars, points of light and reason. ...And then you shot across my sky like a meteor. Suddenly everything was on fire; there was brilliancy, there was beauty. When you were gone, when the meteor had fallen over the horizon, everything went black. Nothing had changed, but my eyes were blinded by the light. I couldn’t see the stars anymore. And there was no more reason, for anything.",
+        "cover": "https://upload.wikimedia.org/wikipedia/en/8/89/Newmooncover.jpg",
+        "reviews": []
+         
+    },
+    {
+        "id": 4,
+        "title": "Twilight: Eclipse",
+        "author": "Stephenie Meyer",
+        "releaseDate":"07/08/2007",
+        "description": "He's like a drug for you Bella.",
+        "cover": "https://upload.wikimedia.org/wikipedia/en/2/20/Eclipsecover.jpg",
+        "reviews": []
+    }
+    ,{
+        "id": 5,
+        "title": "Twilight: Breaking Dawn",
+        "author": "Stephenie Meyer",
+        "releaseDate":"02/08/2008",
+        "description": "Hey, Rosalie? Do you know how to drown a blonde? Stick a mirror to the bottom of a pool.",
+        "cover": "https://upload.wikimedia.org/wikipedia/en/3/31/Breaking_Dawn_cover.jpg",
         "reviews": []
          
     }
+    ,{
+        "id": 6,
+        "title": "Life and Death: Twilight Reimagined",
+        "author": "Stephenie Meyer",
+        "releaseDate":"06/10/2015",
+        "description": "Try not to get caught up in antiquated gender roles.",
+        "cover": "https://upload.wikimedia.org/wikipedia/en/6/65/TwilightReimaginedbook.jpg",
+        "reviews": []
+         
+    }
+    ,{
+        "id": 7,
+        "title": "Midnight Sun",
+        "author": "Stephenie Meyer",
+        "releaseDate":"04/08/2020",
+        "description": "Could a dead, frozen heart beat again? It felt like mine was about to.",
+        "cover": "https://upload.wikimedia.org/wikipedia/en/e/eb/Midnight_Sun_-_Stephanie_Meyer_novel_cover_artwork.jpg",
+        "reviews": []
+         
+    }
+    ,{
+        "id": 8,
+        "title": "Diary of a Wimpy Kid",
+        "author": "Jeff Kinney",
+        "releaseDate":"01/04/2007",
+        "description": "Being a kid can really stink. And no one knows this better than Greg Heffley, who finds himself thrust into middle school, where undersized weaklings share the corridors with kids who are taller, meaner, and already shaving.\n\nIn Diary of a Wimpy Kid, author and illustrator Jeff Kinney introduces us to an unlikely hero. As Greg says in his diary:\n\n\"Just don't expect me to be all 'Dear Diary' this and 'Dear Diary' that.\"\n\nLuckily for us, what Greg Heffley says he won't do and what he actually does are two very different things. ",
+        "cover": "https://static.wikia.nocookie.net/doawk/images/e/e9/Diary_of_a_Wimpy_Kid_version_1.png/revision/latest/scale-to-width-down/268",
+        "reviews": []
+         
+    }
+    ,{
+        "id": 9,
+        "title": "Diary of a Wimpy Kid: Rodrick Rules",
+        "author": "Jeff Kinney",
+        "releaseDate":"01/02/2008",
+        "description": "Whatever you do, don't ask Greg Heffley how he spent his summer vacation, because he definitely doesn't want to talk about it. As Greg enters the new school year, he's eager to put the past three months behind him....and one event in particular. Unfortunately for Greg, his older brother, Rodrick, knows all about the 'incident' Greg wants to keep under wraps, but secrets have a way of getting out...especially when a diary is involved. ",
+        "cover": "https://static.wikia.nocookie.net/doawk/images/c/c8/Book_2.PNG/revision/latest/scale-to-width-down/268",
+        "reviews": []
+         
+    }
+    ,{
+        "id": 10,
+        "title": "Diary of a Wimpy Kid: The Last Straw",
+        "author": "Jeff Kinney",
+        "releaseDate":"13/01/2009",
+        "description": "Let's face it: Greg Heffley will never change his wimpy ways. Somebody just needs to explain that to Greg's father. You see, Frank Heffley thinks he can get his son to toughen up, and he enlists Greg in organized sports and other \"manly\" endeavors. Of course, Greg is easily able to sidestep his father's efforts to change him. But when Greg's dad threatens to send him to the military academy, Greg realizes he has to shape up... or get shipped out. ",
+        "cover": "https://static.wikia.nocookie.net/doawk/images/5/56/Book_3.PNG/revision/latest/scale-to-width-down/268",
+        "reviews": []
+         
+    }
+    ,{
+        "id": 11,
+        "title": "Diary of a Wimpy Kid: Dog Days",
+        "author": "Jeff Kinney",
+        "releaseDate":"12/10/2009",
+        "description": "It's summer vacation, the weather's great, and all the kids are having fun outside. So, where's Greg Heffley? Inside his house, playing video games with the shades drawn. Greg, a self-confessed \"indoor person,\" is living out his ultimate summer fantasy: no responsibilities and no rules. But Greg's mom has a different vision for an ideal summer . . . one packed with outdoor activities and \"family togetherness.\" Whose vision will win out? Or will a new addition to the Heffley family change everything? ",
+        "cover": "https://static.wikia.nocookie.net/doawk/images/e/e5/Diary_of_a_Wimpy_Kid_Dog_Days_cover.jpg/revision/latest/scale-to-width-down/268",
+        "reviews": []
+         
+    }
+    ,{
+        "id": 12,
+        "title": "Diary of a Wimpy Kid: The Ugly Truth",
+        "author": "Jeff Kinney",
+        "releaseDate":"09/11/2010",
+        "description": "Greg Heffley has always been in a hurry to grow up. But is getting older really all it's cracked up to be? Greg suddenly finds himself dealing with the pressures of boy-girl parties, increased responsibilities, and even the awkward changes that come with getting older—all without his best friend, Rowley, at his side. Can Greg make it through on his own? Or will he have to face the \"ugly truth\"? ",
+        "cover": "https://static.wikia.nocookie.net/doawk/images/8/88/Diary_of_a_Wimpy_Kid_The_Ugly_Truth_cover.jpg/revision/latest/scale-to-width-down/268",
+        "reviews": []
+         
+    }
+    ,{
+        "id": 13,
+        "title": "Diary of a Wimpy Kid: Cabin Fever",
+        "author": "Jeff Kinney",
+        "releaseDate":"15/11/2011",
+        "description": "Greg Heffley is in big trouble. School property has been damaged, and Greg is the prime suspect. But the crazy thing is, he's innocent. Or at least sort of. The authorities are closing in, but when a surprise blizzard hits, the Heffley family is trapped indoors. Greg knows that when the snow melts, he's going to have to face the music, but could any punishment be worse than being stuck inside with your family for the holidays? ",
+        "cover": "https://static.wikia.nocookie.net/doawk/images/1/16/Cabinfeverfrontcover6ENG.jpg/revision/latest/scale-to-width-down/268",
+        "reviews": []
+         
+    }
+    ,{
+        "id": 14,
+        "title": "Diary of a Wimpy Kid: The Third Wheel",
+        "author": "Jeff Kinney",
+        "releaseDate":"13/11/2012",
+        "description": "Love is in the air, but what does that mean for Greg Heffley? A Valentine's Day dance at Greg's school has turned his world upside down. As Greg scrambles to find a date, he's worried he'll be left out in the cold on the big night. His best friend, Rowley, doesn't have any prospects either but that's small consolation. Then an unexpected twist gives Greg a partner for the dance and leaves Rowley the odd man out. But a lot can happen in one night, and in the end, you never know who's going to be lucky in love. ",
+        "cover": "https://static.wikia.nocookie.net/doawk/images/f/fa/Diary_of_a_Wimpy_Kid_The_Third_Wheel_cover.jpg/revision/latest/scale-to-width-down/268",
+        "reviews": []
+         
+    }
+    ,{
+        "id": 15,
+        "title": "Diary of a Wimpy Kid: Hard Luck",
+        "author": "Jeff Kinney",
+        "releaseDate":"05/11/2013",
+        "description": "Greg Heffley's on a losing streak. His best friend, Rowley Jefferson, has ditched him, and finding new friends in middle school is proving to be a tough task. To change his fortunes, Greg decides to take a leap of faith and turn his decisions over to chance. Will a roll of the dice turn things around, or is Greg's life destined to be just another hard-luck story? ",
+        "cover": "https://static.wikia.nocookie.net/doawk/images/9/99/Wimpy-Kid-8.jpg/revision/latest/scale-to-width-down/268",
+        "reviews": []
+         
+    }
+    ,{
+        "id": 16,
+        "title": "Diary of a Wimpy Kid: The Long Haul",
+        "author": "Jeff Kinney",
+        "releaseDate":"04/11/2014",
+        "description": "A family road trip is supposed to be a lot of fun... Unless of course, you're the Heffleys. The journey starts off full of promise, then quickly takes several wrong turns. Gas Station bathrooms, a fender-bender, crazed seagulls, and a runaway pig - Not Greg Heffley's idea of a good time. But even the worst road trip can turn into an adventure - and this is one the Heffleys will never forget. ",
+        "cover": "https://static.wikia.nocookie.net/doawk/images/0/08/Diary_of_a_Wimpy_Kid_The_Long_Haul_cover.jpg/revision/latest/scale-to-width-down/268",
+        "reviews": []
+         
+    }
+    ,{
+        "id": 17,
+        "title": "Diary of a Wimpy Kid: Old School",
+        "author": "Jeff Kinney",
+        "releaseDate":"03/11/2015",
+        "description": "Life was better in the old days. Or was it? That's the question Greg Heffley is asking himself as his town voluntarily unplugs and goes electronics-free. But modern life has its conveniences, and Greg isn't cut out for an old-fashioned world. With tension building inside and outside the Heffley home, will Greg find a way to survive? Or is going \"old school\" just too hard for a kid like Greg? ",
+        "cover": "https://static.wikia.nocookie.net/doawk/images/5/5b/Diary_of_a_Wimpy_Kid_Old_School_cover.jpg/revision/latest/scale-to-width-down/268",
+        "reviews": []
+         
+    }
+    ,{
+        "id": 18,
+        "title": "Diary of a Wimpy Kid: Double Down",
+        "author": "Jeff Kinney",
+        "releaseDate":"01/11/2016",
+        "description": "The pressure's really piling up on Greg Heffley. His mom thinks video games are turning his brain to mush, so she wants her son to put down the controller and explore his \"creative side.\" As if that's not scary enough, Halloween is just around the corner and the frights are coming at Greg from every angle. When he discovers a bag of gummy worms, it sparks an idea. Can Greg get his mom off his back by making his own movie... and will he become rich and famous in the process? Or will doubling down on this plan just double Greg's troubles? ",
+        "cover": "https://static.wikia.nocookie.net/doawk/images/4/4e/Diary_of_a_Wimpy_Kid_Double_Down_cover.jpg/revision/latest/scale-to-width-down/267",
+        "reviews": []
+         
+    }
+    ,{
+        "id": 19,
+        "title": "Diary of a Wimpy Kid: The Getaway",
+        "author": "Jeff Kinney",
+        "releaseDate":"07/11/2017",
+        "description": "Greg Heffley and his family are getting out of town. With the cold weather and the stress of the approaching holiday season, the Heffleys decide to escape to a tropical island resort for some much-needed rest and relaxation, instead of staying home. A few days in paradise should do wonders for Greg and his frazzled family. But the Heffleys soon discover that paradise isn't everything it's cracked up to be. Sun poisoning, stomach troubles, and venomous critters all threaten to ruin the family's vacation. Can their trip be saved, or will this island getaway end in disaster? ",
+        "cover": "https://static.wikia.nocookie.net/doawk/images/e/e7/Getaway.jpg/revision/latest/scale-to-width-down/268",
+        "reviews": []
+         
+    }
+    ,{
+        "id":20,
+        "title": "Diary of a Wimpy Kid: The Meltdown",
+        "author": "Jeff Kinney",
+        "releaseDate":"30/11/2018",
+        "description": "When the schools get shut down because of a snowy day, the neighborhood transforms into a wintery battlefield. Some rival groups fight over territory, some rival groups build massive snow forts, and some rival groups stage epic snowball fights. In the crosshairs are Greg Heffley and his trusty-true to the end-best friend, Rowley Jefferson. It's a fight for survival as Greg and Rowley navigate against alliances, betrayals, and warring gangs in a neighborhood meltdown. When the snow clears, will Greg and Rowley emerge as heroes? Or will they even survive to see another day? ",
+        "cover": "https://static.wikia.nocookie.net/doawk/images/6/64/Meltdown.jpg/revision/latest/scale-to-width-down/268",
+        "reviews": []
+         
+    }
+       
 ]
