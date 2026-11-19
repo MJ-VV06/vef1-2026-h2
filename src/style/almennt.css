@@ -80,12 +80,7 @@ footer {
   text-align: center;
 }
 
-.nybok {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-bottom: 16px;
-}
+
 
 .submissiontakki {
   text-decoration: none;
@@ -129,3 +124,18 @@ a {
   }
 }
 
+.valmynd p,
+.valmynd a {
+  padding: 0 1rem;
+  font-weight: 600;
+}
+
+.valmynd a:hover {
+  text-decoration: underline;
+}
+
+.valmynd {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
