@@ -5,12 +5,13 @@
     <link rel="icon" href="../images/icon.svg" />
     <meta charset="utf-8" />
     <script type="module" src="/srcJS/main.js"></script>
+    <script type="module" src="/srcJS/libJS/dropdown.js"> </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <header>
-      <h2>Bækur!</h2>
+      <a><h2>Bækur!</h2></a>
 
       <div class="book-searcher">
         <!--kannski hægt að sleppa því að hafa leitaðu af bók fyrir ofan textann hafa kannski frekar hverfandi texta inni í search barinu-->
@@ -72,10 +73,11 @@
         <label for="review-start"
           >Hvenær byrjaðiru lesturinn? (valfrjálst)</label
         ><br />
-        <input type="date" id="review-text" /><br />
+        <input type="date" id="review-start-date" /><br />
         <label for="review-end">Hvenær ljóskt þú lesturinn? (valfrjálst)</label
         ><br />
-        <input type="date" id="review-text" /><br />
+        <input type="date" id="review-end-date" /><br />
+        <input type="hidden" id="review-stars">
         <div class="hlidvidhlid">
           <div>
             <!-- Hérna eru allar 5 stjörnur, við viljum fylla hlutann sem þú ýtir á og líka stjörnurnar á undan því.-->
