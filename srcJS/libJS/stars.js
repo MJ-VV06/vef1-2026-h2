@@ -12,15 +12,16 @@ let bookreviewaverage = document.querySelector(".dropdown-form div");
  * Þetta er mikilvægt fyrir notanda að skrifa ummál á bók.
  * 
  * @param starContainer {div} Div object that contains all the star images
+ * @param ratingHolder {input} Input element sem mun innihalda ratingið á stjörnunum
  * @returns ratingið sem spilari velur eftir að hafa smellt á stjörnu.
  */
-function createStars(starContainer) {
+function createStars(starContainer, ratingHolder) {
 
     for (let i = 0; i < starContainer.children.length; i++) {
         starContainer.children[i].addEventListener("click",(e) => {
             console.log(e.target.id);
             SetStars(starContainer, e.target.id);
-            return e.target.id;
+            ratingHolder.value = e.target.id;
         })
         
         
@@ -53,4 +54,3 @@ function SetStars(starContainer, ratingNumber) {
     }
     
 }
-
