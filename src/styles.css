@@ -3,6 +3,7 @@
 
 /** css á síðunni að skrá nýja bók */
 @import url("./style/submission.css");
+@import url("./style/stars.css");
 
 /** css yfir almennt útlit, header, footer og bakgrunnur */
 @import url("./style/almennt.css");

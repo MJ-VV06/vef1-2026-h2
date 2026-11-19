@@ -4,8 +4,9 @@
         "id": 0,
         "title": "Fly fly bloon!",
         "author": "Dart monkey",
+        "releaseDate":"22/03/2023",
         "description": "A collection of poems written by the dart monkey from BTD6.",
-        "cover": "",
+        "cover": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/International_hot_air_balloon_festival_in_leon_guanajuato_mexico_2012.jpg/960px-International_hot_air_balloon_festival_in_leon_guanajuato_mexico_2012.jpg",
         "reviews": []
          
     },
@@ -13,8 +14,9 @@
         "id": 2,
         "title": "The small rodent",
         "author": "Average zoologist",
+        "releaseDate":"12/05/1987",
         "description": "A biography of the pet of my local zoologist.",
-        "cover": "",
+        "cover": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Eastern_quoll_%28Dasyurus_viverrinus%29_fawn_morph_Esk_Valley.jpg/1280px-Eastern_quoll_%28Dasyurus_viverrinus%29_fawn_morph_Esk_Valley.jpg",
         "reviews": [
             {
                 "rating": 1,
@@ -30,7 +32,25 @@
         "title": "Twilight",
         "author": "Stephenie Meyer",
         "description": "About three things I was absolutely positive. First, Edward was a vampire. Second, there was a part of him - and I didn't know how dominant that part might be - that thirsted for my blood. And third, I was unconditionally and irrevocably in love with him. Deeply seductive and extraordinarily suspenseful, Twilight is a love story with bite.",
-        "cover": "",
+        "cover": "https://upload.wikimedia.org/wikipedia/en/1/1d/Twilightbook.jpg?_=20200912152913",
+        "reviews": []
+         
+    },
+    {
+    "id": 4,
+    "title": "Twilight: New Moon",
+    "author": "Stephenie Meyer",
+        "description": "",
+        "cover": "https://upload.wikimedia.org/wikipedia/en/8/89/Newmooncover.jpg",
+        "reviews": []
+         
+    },
+    {
+        "id": 4,
+        "title": "Twilight",
+        "author": "Stephenie Meyer",
+        "description": "About three things I was absolutely positive. First, Edward was a vampire. Second, there was a part of him - and I didn't know how dominant that part might be - that thirsted for my blood. And third, I was unconditionally and irrevocably in love with him. Deeply seductive and extraordinarily suspenseful, Twilight is a love story with bite.",
+        "cover": "https://upload.wikimedia.org/wikipedia/en/1/1d/Twilightbook.jpg?_=20200912152913",
         "reviews": []
          
     }
