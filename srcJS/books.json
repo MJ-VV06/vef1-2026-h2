@@ -5,7 +5,7 @@
         "title": "Fly fly bloon!",
         "author": "Dart monkey",
         "description": "A collection of poems written by the dart monkey from BTD6.",
-        "cover": "https://commons.wikimedia.org/wiki/File:International_hot_air_balloon_festival_in_leon_guanajuato_mexico_2012.jpg",
+        "cover": "",
         "reviews": []
          
     },
@@ -14,13 +14,13 @@
         "title": "The small rodent",
         "author": "Average zoologist",
         "description": "A biography of the pet of my local zoologist.",
-        "cover": "https://commons.wikimedia.org/wiki/File:Common_wombat_(Vombatus_ursinus_tasmaniensis)_juvenile_Maria_Island.jpg#/media/File:Common_wombat_(Vombatus_ursinus_tasmaniensis)_juvenile_Maria_Island.jpg",
+        "cover": "",
         "reviews": [
             {
                 "rating": 1,
                 "description": "This is misinformation!",
-                "startedDate": "02/07/22",
-                "finishedDate": "02/07/23"
+                "startedDate": "2022-07-02",
+                "finishedDate": "2023-07-02"
             }
         ]
          
