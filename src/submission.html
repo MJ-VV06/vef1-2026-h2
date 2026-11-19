@@ -1,61 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="is">
-    <head>
-        <title>Bókaskráning!</title>
-        <link rel="icon" href="../images/icon.svg">
+  <head>
+    <title>Bókaskráning!</title>
+    <link rel="icon" href="../images/icon.svg" />
     <meta charset="utf-8" />
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    
-    <body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-        <header>
-            <h2>Bækur!</h2>
-            <div class="book-searcher">
-            
-            <form>
-                <label for="book-search-input">Leitaðu af bók!</label><br>
-                <input name="book-search-input" id="book-search-input">
-            </form>
-            <ul class="search-results">
+  <body>
+    <header>
+      <h2>Bækur!</h2>
+      <div class="book-searcher">
+        <form>
+          <label for="book-search-input">Leitaðu af bók!</label><br />
+          <input name="book-search-input" id="book-search-input" />
+        </form>
+        <ul class="search-results"></ul>
+      </div>
+      <!-- Þetta er  kubburinn sem inniheldur search bar-ið -->
+    </header>
 
-            </ul>
-            </div> <!-- Þetta er  kubburinn sem inniheldur search bar-ið -->
-            
-        </header>
+    <main class="submain">
+      <h1>Bókaskráning!</h1>
+      <form class="book-form">
+        <label for="title">Titill</label><br />
+        <input type="text" id="title" required /><br />
+        <label for="author">Höfundur (valfrjálst)</label><br />
+        <input type="text" id="author" /><br />
+        <label for="description">Lýsing (valfrjálst)</label><br />
+        <input type="text" id="description" /><br />
+        <label for="cover">Kápa (valfrjálst)</label><br />
+        <input type="text" id="cover" alt="Input for cover" /><br />
+        <label for="submission">Skila</label><br />
+        <input type="submit" id="submission" />
+      </form>
+    </main>
 
-        <main class = "submain">
-            <h1>Bókaskráning!</h1>
-            <form class="book-form">
-                    <label for="title" >Titill</label><br>
-                <input type="text" id="title" required><br>
-                <label for="author" >Höfundur (valfrjálst)</label><br>
-                <input type="text" id="author"><br>
-                <label for="description">Lýsing (valfrjálst)</label><br>
-                <input type="text" id="description"><br>
-                <label for="cover">Kápa (valfrjálst)</label><br>
-                <input type="text" id="cover" alt="Input for cover"><br>
-                <label for="submission">Skila</label><br>
-                <input type="submit" id="submission">
-            </form>
+    <footer>
+      <div class="heimilisfang">
+        <p>Antartica</p>
+        <p>Davis Station</p>
+      </div>
 
-        </main>
-
-        <footer>
-            <div class = "heimilisfang">
-                <p>Antartica</p>
-                <p>Davis Station</p>
-
-            </div>
-
-            <div class = "simanr">
-                <p>Sími +354 123-4567</p>
-                <p>Hafa samband: <a href="mailto:bok@bokin.is">bok@bokin.is</a> </p>
-
-            </div>
-
-        </footer>
-
-    </body>
-
+      <div class="simanr">
+        <p>Sími +354 123-4567</p>
+        <p>Hafa samband: <a href="mailto:bok@bokin.is">bok@bokin.is</a></p>
+      </div>
+    </footer>
+  </body>
 </html>
