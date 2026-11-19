@@ -15,7 +15,11 @@ let bookreviewaverage = document.querySelector(".dropdown-form div");
  * @param ratingHolder {input} Input element sem mun innihalda ratingið á stjörnunum
  * @returns ratingið sem spilari velur eftir að hafa smellt á stjörnu.
  */
+<<<<<<< HEAD
 function createStars(starContainer, ratingHolder) {
+=======
+export function createStars(starContainer, ratingHolder) {
+>>>>>>> origin/main
 
     for (let i = 0; i < starContainer.children.length; i++) {
         starContainer.children[i].addEventListener("click",(e) => {
