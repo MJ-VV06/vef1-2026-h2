@@ -1,7 +1,8 @@
-import { loadBooks  } from "./libJS/storage.js";
-import { addBook, averageRating, getBookById, addReview, searchBooks, findBookId } from "./libJS/books.js";
+import { loadBooks, saveBooks  } from "./libJS/storage.js";
+import { addBook, getBookById, addReview, findBookId } from "./libJS/books.js";
 import { renderBookList, setupSearch, renderBook, renderReviews } from "./libJS/ui.js";
-import {el, empty} from "./libJS/elements.js"
+import {el, empty} from "./libJS/elements.js";
+import {SetStars} from "./libJS/stars.js"
 const data = await loadBooks();
 const input = document.querySelector("#book-search-input"); // allar síður hafa
 const searchForm = document.querySelector(".book-searcher form");
@@ -53,4 +54,89 @@ if (bookHTML) {
         empty(bookHTML);
         bookHTML.appendChild(el("h1", {}, "Bók fannst ekki"));
     }
+}
+
+
+//ef book-form er til þá er hægt að submita
+const bookInputHTML = document.querySelector(".book-form");
+if (bookInputHTML) {
+    
+    // ef submit, ekki refresha
+    bookInputHTML.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        //sækja í form data, svo breytta í object
+        const formData = new FormData(bookInputHTML);
+        const formDataObject = Object.fromEntries(formData.entries());
+
+        // reyna
+        try {
+            //bæta við bókina
+            const book = addBook(data, formDataObject);
+
+            //save í json
+            saveBooks(data);
+
+            window.location.href = `/src/book.html?id=${book.id}`;
+
+        } catch (error) {
+            console.error(error.message);
+        }
+    })
+}
+
+//ef review form er til
+const reviewInputHTML = document.querySelector(".dropdown-form");
+if (reviewInputHTML) {
+
+    //no refresh submit
+    reviewInputHTML.addEventListener('submit', (event) => {
+         event.preventDefault();
+
+        //sækja í form data og breytta í object
+        const formData = new FormData(reviewInputHTML);
+        const formDataObject = Object.fromEntries(formData.entries());
+
+        // reyna
+        try {
+
+            //finna bok id sem við erum á
+            const bookID = findBookId();
+
+            //eff null skila undef, annar sækja í bókina með id
+            const book = bookID === null? undefined : getBookById(data, bookID);
+
+            //bók ekki til kasta error
+            if (!book) {
+                throw new Error("no book");
+            }
+
+            //bæta við review
+            addReview(book,formDataObject.rating,formDataObject.description,formDataObject.startedDate,formDataObject.finishedDate);
+
+            //save í json
+            saveBooks(data);
+
+            renderBook(bookHTML, book); 
+
+            // sýna review á síðuna
+            const reviewList = document.querySelector(".review-list");
+            if (reviewList) {
+                empty(reviewList);
+                renderReviews(reviewList, book);
+            }
+
+            reviewInputHTML.reset(); // hreinsa review form
+            SetStars(document.querySelector(".hlidvidhlid div"), 0); // hreinsa stars
+            
+            //hreinsa rating þannig það er ekki hægt að submita 0 star review með same value og seinnasta review
+            const ratingInput = document.getElementById("review-stars");
+            if (ratingInput) {
+                ratingInput.value = "";
+            }
+
+        } catch (error) {
+            console.error(error.message);
+        }
+    });
 }

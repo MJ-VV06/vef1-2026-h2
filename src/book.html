@@ -26,7 +26,6 @@
     <main class="bookmain">
       <div class="book-container">
         <div class="book-review-average">
-          <img src="images/star-full.svg" alt="star" height="16px" />
           <img
             src="../images/star-open-full.svg"
             alt="star"
@@ -68,15 +67,15 @@
 
       <form class="dropdown-form">
         <label for="review-text">Skrifaðu umsögn (valfrjálst)</label><br />
-        <input type="text" id="review-text" /><br />
+        <input type="text" id="review-text" name="description"/><br />
         <label for="review-start"
           >Hvenær byrjaðiru lesturinn? (valfrjálst)</label
         ><br />
-        <input type="date" id="review-start-date" /><br />
+        <input type="date" id="review-start-date" name="startedDate"/><br />
         <label for="review-end">Hvenær ljóskt þú lesturinn? (valfrjálst)</label
         ><br />
-        <input type="date" id="review-end-date" /><br />
-        <input type="hidden" id="review-stars">
+        <input type="date" id="review-end-date"  name="finishedDate"/><br />
+        <input type="hidden" id="review-stars" name="rating">
         <div class="hlidvidhlid">
           <div>
             <!-- Hérna eru allar 5 stjörnur, við viljum fylla hlutann sem þú ýtir á og líka stjörnurnar á undan því.-->

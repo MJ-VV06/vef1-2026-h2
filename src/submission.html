@@ -5,6 +5,7 @@
     <link rel="icon" href="../images/icon.svg" />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="../srcJS/main.js"></script>
   </head>
 
   <body>
@@ -23,13 +24,13 @@
       <h1>Bókaskráning!</h1>
       <form class="book-form">
         <label for="title">Titill</label><br />
-        <input type="text" id="title" required /><br />
+        <input type="text" id="title" name="title" required /><br />
         <label for="author">Höfundur (valfrjálst)</label><br />
-        <input type="text" id="author" /><br />
+        <input type="text" id="author" name="author" /><br />
         <label for="description">Lýsing (valfrjálst)</label><br />
-        <input type="text" id="description" /><br />
+        <input type="text" id="description"  name="description"/><br />
         <label for="cover">Kápa (valfrjálst)</label><br />
-        <input type="text" id="cover" alt="Input for cover" /><br />
+        <input type="text" id="cover" name="cover" /><br />
         <label for="submission">Skila</label><br />
         <input type="submit" id="submission" />
       </form>
