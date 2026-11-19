@@ -11,6 +11,7 @@ header {
   padding: 1rem 2rem;
   text-align: center;
   background-color: #c4ecf7;
+  margin-bottom: 16px;
 }
 
 #book-search-input {
@@ -42,6 +43,89 @@ footer {
   text-align: right;  
 }
 
-.hidden {
-  display: none;
+.book-container {
+  width: 100%;
 }
+
+.book-cover {
+  width: 100%;
+}
+
+.book-list {
+  width: 100%;
+  padding: 8px 16px;
+}
+
+.targethref {
+  list-style: none;
+  
+}
+
+.targethref a img{
+  width: 100%;
+  
+}
+
+.targethref a h1 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.targethref a {
+  text-decoration: none;
+  color: #000000
+}
+
+.boklist {
+  text-align: center;
+}
+
+.nybok {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.submissiontakki {
+  text-decoration: none;
+  color:#000000;
+  padding: 6px 16px;
+  margin-bottom: 8px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: #c4ecf7;
+  width: fit-content;
+  align-self: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color:#000000;
+}
+
+@media (width>=650px) {
+  header {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-searcher {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  main{
+    width: 50%;
+    align-self: center;
+  }
+}
+
